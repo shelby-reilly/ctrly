@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <rect width="32" height="32" rx="6" fill="#060C14"/>
   <rect x="2" y="2" width="28" height="28" rx="4.5" fill="none" stroke="white" stroke-width="1.5"/>
-  <text x="16" y="21.5" text-anchor="middle" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-size="11.5" fill="white" letter-spacing="0.8">C+Y</text>
+  <text x="16" y="21" text-anchor="middle" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-size="10" fill="white" letter-spacing="0.5">C+Y</text>
 </svg>
