@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CTRL+Y — Intelligence Built for the Field</title>
   <meta name="description" content="Purpose-driven AI and operational software for emergency response, search and rescue, and public safety agencies." />
-  <link rel="icon" type="image/png" href="https://ctrly.org/wp-content/uploads/2024/10/LogoPNG-1.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="apple-touch-icon" href="https://ctrly.org/wp-content/uploads/2024/10/LogoPNG-1.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -236,23 +236,6 @@
             </div>
             <div class="mission-photo mission-photo-tertiary reveal reveal-delay-2">
               <img src="https://ctrly.org/wp-content/uploads/2024/10/SDIM0572-scaled.jpg" alt="Operational deployment" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="mission-stat-row" aria-hidden="true">
-            <div class="mission-stat reveal reveal-delay-1">
-              <span class="stat-value" data-count="40">0</span><span class="stat-suffix">+</span>
-              <span class="stat-label">Agencies Reached</span>
-            </div>
-            <div class="mission-stat-divider"></div>
-            <div class="mission-stat reveal reveal-delay-2">
-              <span class="stat-value" data-count="200">0</span><span class="stat-suffix">+</span>
-              <span class="stat-label">Missions Supported</span>
-            </div>
-            <div class="mission-stat-divider"></div>
-            <div class="mission-stat reveal reveal-delay-3">
-              <span class="stat-value" data-count="6">0</span><span class="stat-suffix"></span>
-              <span class="stat-label">Deployed Systems</span>
             </div>
           </div>
         </div>
@@ -672,27 +655,57 @@
     <!-- ─── CONTACT / CTA ─────────────────────────────────────────────────── -->
     <section id="contact" class="section section-cta">
       <canvas id="cta-canvas"></canvas>
-      <div class="container cta-inner">
-        <div class="cta-content reveal">
-          <div class="section-eyebrow">Get in Touch</div>
-          <h2 class="cta-headline">
-            Ready to Build Something<br />That Matters?
-          </h2>
-          <p class="cta-subhead">
-            We work with agencies, emergency services, and mission-driven organizations building smarter, faster, and more reliable operational systems. If your work demands it, let's talk.
-          </p>
-          <div class="cta-actions">
-            <a href="mailto:contact@ctrly.org" class="btn btn-primary btn-large">
-              <span>contact@ctrly.org</span>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a href="https://ctrly.org" class="btn btn-outline">Visit ctrly.org</a>
-          </div>
-          <div class="cta-detail mono">
-            Based in the United States &nbsp;·&nbsp; Operating Nationwide
-          </div>
-        </div>
+      <div class="container">
+        <div class="contact-grid">
 
+          <div class="contact-left reveal">
+            <div class="section-eyebrow">Get in Touch</div>
+            <h2 class="cta-headline">Ready to Build Something That Matters?</h2>
+            <p class="cta-subhead">We work with agencies, emergency services, and mission-driven organizations. If your work demands it, let's talk.</p>
+            <div class="contact-meta">
+              <div class="contact-meta-item">
+                <span class="mono contact-meta-label">Email</span>
+                <a href="mailto:contact@ctrly.org" class="contact-meta-value">contact@ctrly.org</a>
+              </div>
+              <div class="contact-meta-item">
+                <span class="mono contact-meta-label">Location</span>
+                <span class="contact-meta-value">United States · Nationwide</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-right reveal reveal-delay-1">
+            <form id="contact-form" action="https://formspree.io/f/xaqappjn" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cf-name" class="form-label">Name</label>
+                  <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label for="cf-email" class="form-label">Email</label>
+                  <input type="email" id="cf-email" name="email" placeholder="you@agency.gov" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cf-org" class="form-label">Organization <span class="form-optional">optional</span></label>
+                <input type="text" id="cf-org" name="organization" placeholder="Agency or organization name" />
+              </div>
+              <div class="form-group">
+                <label for="cf-message" class="form-label">Message</label>
+                <textarea id="cf-message" name="message" placeholder="Tell us about your mission and what you're building..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-large form-submit">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </form>
+            <div id="form-success" class="form-success" style="display:none;">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#6B9DC8" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#6B9DC8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Message received. We'll be in touch.
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 

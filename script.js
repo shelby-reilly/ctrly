@@ -460,3 +460,38 @@ const rand = (a, b) => Math.random() * (b - a) + a;
     });
   });
 })();
+
+
+/* ══════════════════════════════════════════════════════════════════════════ *
+ * CONTACT FORM — async submit via Formspree, show inline success state
+ * ══════════════════════════════════════════════════════════════════════════ */
+(function initContactForm() {
+  const form = document.getElementById('contact-form');
+  const success = document.getElementById('form-success');
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('.form-submit');
+    btn.disabled = true;
+    btn.querySelector('span').textContent = 'Sending…';
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        success.style.display = 'flex';
+      } else {
+        btn.querySelector('span').textContent = 'Try again';
+        btn.disabled = false;
+      }
+    } catch {
+      btn.querySelector('span').textContent = 'Try again';
+      btn.disabled = false;
+    }
+  });
+})();
