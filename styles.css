@@ -603,8 +603,6 @@ ul { list-style: none; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-2);
-  background: rgba(107, 157, 200, 0.06);
-  border: 1px solid var(--border);
   border-radius: 100px;
   padding: 6px 14px 6px 10px;
   margin-bottom: 36px;
@@ -1729,4 +1727,6 @@ ul { list-style: none; }
   .cta-actions { flex-direction: column; }
   .hero-actions { flex-direction: column; width: 100%; }
   .hero-actions .btn { width: 100%; justify-content: center; }
+}
+100%; justify-content: center; }
 }
