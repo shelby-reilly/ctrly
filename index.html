@@ -219,6 +219,53 @@
       </div>
     </section>
 
+    <!-- ─── NETWORK VISUALIZATION ──────────────────────────────────────────── -->
+    <section id="network-viz" class="nviz-section" aria-label="Global operational network">
+      <canvas id="nviz-canvas" aria-hidden="true"></canvas>
+
+      <div class="nviz-copy">
+        <div class="nviz-eyebrow reveal">
+          <span class="badge-dot"></span>
+          <span class="mono">Live Network</span>
+        </div>
+        <h2 class="nviz-headline reveal reveal-delay-1">
+          Intelligence<br /><em>in Motion.</em>
+        </h2>
+        <p class="nviz-subhead reveal reveal-delay-2">
+          Monitor drones, telemetry, and communications through a unified real-time operational layer — from the field to command.
+        </p>
+        <a href="#capabilities" class="btn btn-outline nviz-cta reveal reveal-delay-3">
+          <span>Explore the Platform</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="nviz-status-strip reveal reveal-delay-3">
+          <div class="nviz-status-item">
+            <span class="badge-dot badge-dot--sm"></span>
+            <span class="mono">6 Assets Online</span>
+          </div>
+          <div class="nviz-status-sep"></div>
+          <div class="nviz-status-item">
+            <span class="mono">Mesh Sync Active</span>
+          </div>
+          <div class="nviz-status-sep"></div>
+          <div class="nviz-status-item">
+            <span class="mono">Latency 18ms</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="nviz-cards" class="nviz-cards" aria-hidden="true"></div>
+
+      <div class="nviz-hud nviz-hud-tr" aria-hidden="true">
+        <span class="mono nviz-hud-label">OPERATIONAL</span>
+        <span class="mono nviz-hud-value hud-active">DEMO</span>
+      </div>
+      <div class="nviz-hud nviz-hud-br" aria-hidden="true">
+        <span class="mono nviz-hud-label">NODES</span>
+        <span class="mono nviz-hud-value">8 ACTIVE</span>
+      </div>
+    </section>
+
     <!-- ─── MISSION ───────────────────────────────────────────────────────── -->
     <section id="mission" class="section section-dark">
       <div class="mission-grid">
@@ -670,5 +717,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="network-viz.js"></script>
 </body>
 </html>
